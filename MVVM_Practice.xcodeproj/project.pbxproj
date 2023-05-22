@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60F5C3AA781EC14D53428B95 /* Pods_MVVM_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3A4434A4CD887CFEAF49C6 /* Pods_MVVM_Practice.framework */; };
 		EA8390462A18817F00B0D8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8390452A18817F00B0D8FD /* AppDelegate.swift */; };
 		EA8390482A18817F00B0D8FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8390472A18817F00B0D8FD /* SceneDelegate.swift */; };
 		EA83904A2A18817F00B0D8FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8390492A18817F00B0D8FD /* ViewController.swift */; };
 		EA83904D2A18817F00B0D8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA83904B2A18817F00B0D8FD /* Main.storyboard */; };
 		EA83904F2A18818000B0D8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA83904E2A18818000B0D8FD /* Assets.xcassets */; };
 		EA8390522A18818000B0D8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8390502A18818000B0D8FD /* LaunchScreen.storyboard */; };
+		EA83905D2A1882A800B0D8FD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83905C2A1882A800B0D8FD /* TableViewCell.swift */; };
+		EA83905F2A18839400B0D8FD /* TeslaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83905E2A18839400B0D8FD /* TeslaModel.swift */; };
+		EA8390622A1883E400B0D8FD /* TeslaNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8390612A1883E400B0D8FD /* TeslaNetworkManager.swift */; };
+		EA8390642A1884E800B0D8FD /* TeslaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8390632A1884E800B0D8FD /* TeslaViewModel.swift */; };
+		EA8390682A18BEEA00B0D8FD /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8390672A18BEEA00B0D8FD /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		107519C42B684AD1A994DF22 /* Pods-MVVM_Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Practice.release.xcconfig"; path = "Target Support Files/Pods-MVVM_Practice/Pods-MVVM_Practice.release.xcconfig"; sourceTree = "<group>"; };
+		5C3A4434A4CD887CFEAF49C6 /* Pods_MVVM_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B50C220EB8DA9417F47B47 /* Pods-MVVM_Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Practice.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_Practice/Pods-MVVM_Practice.debug.xcconfig"; sourceTree = "<group>"; };
 		EA8390422A18817F00B0D8FD /* MVVM_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8390452A18817F00B0D8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8390472A18817F00B0D8FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		EA83904E2A18818000B0D8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8390512A18818000B0D8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8390532A18818000B0D8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA83905C2A1882A800B0D8FD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EA83905E2A18839400B0D8FD /* TeslaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaModel.swift; sourceTree = "<group>"; };
+		EA8390612A1883E400B0D8FD /* TeslaNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaNetworkManager.swift; sourceTree = "<group>"; };
+		EA8390632A1884E800B0D8FD /* TeslaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaViewModel.swift; sourceTree = "<group>"; };
+		EA8390672A18BEEA00B0D8FD /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F5C3AA781EC14D53428B95 /* Pods_MVVM_Practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B9B5DA3F70C9804CD7176B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C3A4434A4CD887CFEAF49C6 /* Pods_MVVM_Practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88329A40AE42AEF43D1809E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98B50C220EB8DA9417F47B47 /* Pods-MVVM_Practice.debug.xcconfig */,
+				107519C42B684AD1A994DF22 /* Pods-MVVM_Practice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA8390392A18817E00B0D8FD = {
 			isa = PBXGroup;
 			children = (
 				EA8390442A18817F00B0D8FD /* MVVM_Practice */,
 				EA8390432A18817F00B0D8FD /* Products */,
+				88329A40AE42AEF43D1809E6 /* Pods */,
+				3B9B5DA3F70C9804CD7176B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +92,74 @@
 			children = (
 				EA8390452A18817F00B0D8FD /* AppDelegate.swift */,
 				EA8390472A18817F00B0D8FD /* SceneDelegate.swift */,
-				EA8390492A18817F00B0D8FD /* ViewController.swift */,
-				EA83904B2A18817F00B0D8FD /* Main.storyboard */,
+				EA8390602A1883D600B0D8FD /* Network */,
+				EA83905A2A18819000B0D8FD /* Model */,
+				EA83905B2A18819600B0D8FD /* ViewModel */,
+				EA8390592A18818400B0D8FD /* View */,
 				EA83904E2A18818000B0D8FD /* Assets.xcassets */,
-				EA8390502A18818000B0D8FD /* LaunchScreen.storyboard */,
 				EA8390532A18818000B0D8FD /* Info.plist */,
 			);
 			path = MVVM_Practice;
+			sourceTree = "<group>";
+		};
+		EA8390592A18818400B0D8FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA83904B2A18817F00B0D8FD /* Main.storyboard */,
+				EA8390502A18818000B0D8FD /* LaunchScreen.storyboard */,
+				EA8390662A18895D00B0D8FD /* Controller */,
+				EA8390652A18895700B0D8FD /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA83905A2A18819000B0D8FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA83905E2A18839400B0D8FD /* TeslaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA83905B2A18819600B0D8FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA8390632A1884E800B0D8FD /* TeslaViewModel.swift */,
+				EA8390692A18BF9300B0D8FD /* DataBinding */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA8390602A1883D600B0D8FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA8390612A1883E400B0D8FD /* TeslaNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA8390652A18895700B0D8FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA83905C2A1882A800B0D8FD /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA8390662A18895D00B0D8FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA8390492A18817F00B0D8FD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA8390692A18BF9300B0D8FD /* DataBinding */ = {
+			isa = PBXGroup;
+			children = (
+				EA8390672A18BEEA00B0D8FD /* Observable.swift */,
+			);
+			path = DataBinding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA8390562A18818000B0D8FD /* Build configuration list for PBXNativeTarget "MVVM_Practice" */;
 			buildPhases = (
+				C4164AEF77AF9E2FDB049D93 /* [CP] Check Pods Manifest.lock */,
 				EA83903E2A18817F00B0D8FD /* Sources */,
 				EA83903F2A18817F00B0D8FD /* Frameworks */,
 				EA8390402A18817F00B0D8FD /* Resources */,
+				9DDAEC8FB92B24060CD13C9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +230,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9DDAEC8FB92B24060CD13C9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM_Practice/Pods-MVVM_Practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM_Practice/Pods-MVVM_Practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM_Practice/Pods-MVVM_Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4164AEF77AF9E2FDB049D93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM_Practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA83903E2A18817F00B0D8FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA83905F2A18839400B0D8FD /* TeslaModel.swift in Sources */,
 				EA83904A2A18817F00B0D8FD /* ViewController.swift in Sources */,
+				EA8390642A1884E800B0D8FD /* TeslaViewModel.swift in Sources */,
+				EA8390622A1883E400B0D8FD /* TeslaNetworkManager.swift in Sources */,
+				EA83905D2A1882A800B0D8FD /* TableViewCell.swift in Sources */,
+				EA8390682A18BEEA00B0D8FD /* Observable.swift in Sources */,
 				EA8390462A18817F00B0D8FD /* AppDelegate.swift in Sources */,
 				EA8390482A18817F00B0D8FD /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +426,7 @@
 		};
 		EA8390572A18818000B0D8FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B50C220EB8DA9417F47B47 /* Pods-MVVM_Practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +455,7 @@
 		};
 		EA8390582A18818000B0D8FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107519C42B684AD1A994DF22 /* Pods-MVVM_Practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
