@@ -28,11 +28,11 @@ class Observable<T> {
     // 즉, 이 listener는 업데이트 된 값을 저장하는 데에 사용된다.
     private var listener: ((T?) -> Void)?
     
-    // 5) 이 함수를 실행함으로써 4)에 저장되어 있던 그 결과를 View로 옮겨올 수 있다.
+    // 5) 이 함수를 실행함으로써 3)에 저장되어 있던 그 결과를 View로 옮겨올 수 있다.
     // 즉, 이 함수로 인해 listener와 View가 서로 연결되어 무슨 일이 일어나는지 알 수 있게 된 것이다. ⭐️
-    func bind(_ listener: @escaping (T?) -> Void) {
-        listener(value) // 1) ~ 4) 과정을 통해 들어온 listener 클로저 값을 실행
-        self.listener = listener // 특정 값을 나중에 didSet에서도 실행할 수 있도록 클로저 변수에 담아두기 
+    func bind(_ closure: @escaping (T?) -> Void) {
+        closure(value) // 1) ~ 4) 과정을 통해 들어온 listener 클로저 값을 실행
+        self.listener = closure // 새롭게 업데이트 된 값을 다시 listener 클로저에 저장
     }
     
 }
